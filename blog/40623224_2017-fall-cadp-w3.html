@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+    <title>2017 Fall CP 第三週 - 2017Fall CADP&CP (虎尾科大MDE)</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="./40623224_2017-fall-cadp-w3.html">
+
+        <meta name="author" content="40623224" />
+        <meta name="keywords" content="2017fall,CADP w3" />
+        <meta name="description" content="本學期起各班透過一台 Ubuntu 16.04 主機, 建立 Fossil SCM 伺服器, 且每一學員發放一個 Fossil SCM 倉儲, 其中各學員可以利用 Wiki 與 Technote 紀錄學習資料外, 還可以將靜態網誌與簡報檔案放入 Files 資料區." />
+
+        <meta property="og:site_name" content="2017Fall CADP&CP (虎尾科大MDE)" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="2017 Fall CP 第三週"/>
+        <meta property="og:url" content="./40623224_2017-fall-cadp-w3.html"/>
+        <meta property="og:description" content="本學期起各班透過一台 Ubuntu 16.04 主機, 建立 Fossil SCM 伺服器, 且每一學員發放一個 Fossil SCM 倉儲, 其中各學員可以利用 Wiki 與 Technote 紀錄學習資料外, 還可以將靜態網誌與簡報檔案放入 Files 資料區."/>
+        <meta property="article:published_time" content="2017-09-25" />
+            <meta property="article:section" content="Course" />
+            <meta property="article:tag" content="2017fall" />
+            <meta property="article:tag" content="CADP w3" />
+            <meta property="article:author" content="40623224" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="./theme/css/bootstrap.united.min.css" type="text/css"/>
+    <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="./theme/css/pygments/monokai.css" rel="stylesheet">
+    <link href="./theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
+
+        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="2017Fall CADP&CP (虎尾科大MDE) ATOM Feed"/>
+
+<script type="text/javascript" src="./../data/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushBash.js"></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "./../data/syntaxhighlighter/shCore.css";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "./../data/syntaxhighlighter/shThemeDefault.css?ver=3.0.9b";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="./" class="navbar-brand">
+2017Fall CADP&CP (虎尾科大MDE)            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="./category/course.html">Course</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="./search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+              <li><a href="./archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="./40623224_2017-fall-cadp-w3.html"
+                       rel="bookmark"
+                       title="Permalink to 2017 Fall CP 第三週">
+                        2017 Fall CP 第三週
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2017-09-25T11:00:00+08:00"> 週一 25 九月 2017</time>
+    </span>
+            <span class="label label-default">By</span>
+            <a href="./author/40623224.html"><i class="fa fa-user"></i> 40623224</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="./tag/2017fall.html">2017fall</a>
+        /
+	<a href="./tag/cadp-w3.html">CADP w3</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>本學期起各班透過一台 Ubuntu 16.04 主機, 建立 Fossil SCM 伺服器, 且每一學員發放一個 Fossil SCM 倉儲, 其中各學員可以利用 Wiki 與 Technote 紀錄學習資料外, 還可以將靜態網誌與簡報檔案放入 Files 資料區.</p>
+
+
+<p>課程相關連結</p>
+<p>與 KMOLab 相關的課程與研究資料, 可以從 http://mde.tw 中連結, 2017 Fall 採 Fossil SCM 建立的課程網頁, 則位於 https://mde1a1.kmol.info/2017fall</p>
+<p>http://mde.tw 連結主要包含使用 Github 倉儲製作的 Github Pages 網頁, 以及存放在系上工作站室中的 Ubuntu 伺服器.</p>
+<p>Pymcad github 倉儲 CP Wiki 是與計算機程式課程有關的資料, pymcadp 倉儲則存放與課程相關的程式開發專案.</p>
+<p>建議學習程式語言的順序</p>
+<p>從本課程的指定閱讀 https://spectrum.ieee.org/computing/software/the-2017-top-programming-languages 中, 可以發現 IEEE Spectrum 雜誌指出目前最受歡迎的前十種程式語言為 Python、C、Java、C++、C#、R、Javascript、PHP、Go 與 Swift, 其中 KMOLab 建議機械設計工程師學習計算機程式語言的優先順序為:</p>
+<ol>
+<li>
+<p>先學 Python3, 若工作或研究需要, 再學習如何將團隊目前所使用的 Python2 程式套件轉為 Python3 相容.</p>
+</li>
+<li>
+<p>當 Python3 有一定基礎之後, 建議學習 ANSI C 與 C++11 , 主要學習目的在編譯能與 Python3 結合使用的控制或數值分析程式庫, 假如針對既有的 C/C++ 套件, 可以利用 SWIG 技術, 將程式庫編譯為可讓 Python3 程式直接呼叫, 假如所要使用的數值分析演算法非常明確, 在直接寫為 C/C+ 程式庫之前, 可以利用 Python3 來編寫演算程式進行測試, 之後實際運用時, 再透過 Cython 轉為共享程式庫, 讓 Python3 程式呼叫使用.</p>
+</li>
+<li>
+<p>在學習 Python3 的過程, 若使用 Flask 模組編寫網際程式, 一定免不了學習 Javascript, 部分情況下, 可以透過 Brython 將網頁上的 Python3 程式轉為 Javascript 執行, 但是 Javascript 逐步與傳統機械設計相關 CAD, 甚至雲端 MCAD (Mechanical Computer Aided Design) 套件結合的趨勢已經非常明顯 (例如: AutoCAD Javascript API 與 OnShape), 學習基本的 Javascript 程式語法及應用, 已經無可避免.</p>
+</li>
+<li>
+<p>當機械設計工程師學習 Pyton3、C/C++ 與 Javascript 之後, 已經可以採跨平台的方式, 編寫單機視窗程式、雲端伺服器程式與隨身裝置程式, 但是在某些情況下, 可能也需要學習 Java (或 Scala)、Go 與 C#.</p>
+</li>
+</ol>
+<p>總結上段論述, 建議機械設計工程師學習計算機程式語言的順序為:</p>
+<ol>
+<li>
+<p>Python3</p>
+</li>
+<li>
+<p>C/C++</p>
+</li>
+<li>
+<p>Javascript</p>
+</li>
+<li>
+<p>Java, Scala, Go 或 C#</p>
+</li>
+</ol>
+<p>導入課程操作練習</p>
+<p>請根據 共同導入課程 的說明, 啟動隨身程式系統, 了解如何使用 Fossil SCM clone 遠端的倉儲, 以及如何以 fossil open 指令, 將 clone 到近端的倉儲資料庫檔案, 開啟在近端的工作目錄中, 如何改版, 如何推送版本, 以及如何利用 fossil ui 檢查目前近端倉儲中的資料內容, 最後則是學習如何利用 fossil update 指令, 同步近端與遠端的 fossil 倉儲資料.</p>
+<p>此外, 有關 Leo Editor、Pelican Blog 與 Reveal.js 的用法, 雖然都已經透過整理, 希望降低初學者的進入門檻, 但是操作過程中牽涉許多細節, 若學員沒有仔細記錄用法, 並且充分了解各系統的基本原理, 或者沒能親自操作體會, 可能在使用上會有很高的挫折感, 大家在操作過程若有任何疑問, 可以詢問課堂上的助教或老師, 也可以與其他同學討論, 務必要在很短時間內, 熟悉這些工具的基本操作與使用方法.</p>
+<p>PyQt5 GUI 程式</p>
+<p>PyQt5 是一套從 C++/Qt 應用程式開發框架轉換而來的程式庫, 能讓 Python3 程式直接呼叫, 用來建立使用者圖形介面 (GUI, Graphical User Interface) 程式的模組.</p>
+<p>GUI 應用程式採事件驅動 (event-driven), 使用者經由滑鼠或鍵盤, 點按圖形介面中元件的動作, 稱為事件.</p>
+<p>當事件發生時, 每一個 PyQt5 元件就會發出訊號 (signal), 此訊號在程式邏輯中被設計用來連接 (connect) 到特定動作槽 (slot), 並由動作槽的方法 (method) 內容完成對應動作 (action).</p>
+<p>PyQt5 視窗程式運作流程</p>
+<p>建立應用程式物件 (Application Object)
+建立 GUI 物件
+顯示 (show) GUI 物件
+執行 (exec) 事件迴圈 (event loop)
+整個 PyQt5 程式會在 QApplication 物件執行 exec() 方法之後, 所對應啟動的事件迴圈開始接受使用者所選定的事件而驅動程式操作.</p>
+<p>本課程將利用 Eric6 IDE 來編寫 PyQt5 視窗程式, Eric6 採用 PyQt5 與 QScintilla 編輯器元件編寫. Eric6 也是採用 Eric6 IDE 開發, KMOLab 的 eric6-project 位於https://github.com/kmolab/eric6-project</p>
+<p>參考資料:</p>
+<p>http://zetcode.com/gui/pyqt5/firstprograms/
+https://github.com/baoboa/pyqt5/blob/master/examples/widgets/calculator.py
+Tetris
+Python3 學習參考資料</p>
+<p>http://openbookproject.net/thinkcs/python/english3e/</p>
+<p>The Future of Programming?</p>
+<p>https://vimeo.com/71278954</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+                <ul class="list-group" id="recentposts">
+                    <li class="list-group-item">
+                        <a href="./40623224_2017-fall-cp-w10.html">
+                            2017 Fall CP 第十週
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./40623224_2017-fall-cp-w9心得.html">
+                            2017 Fall CP 期中考心得
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./40623224_2017-fall-cp-w8 - exam.html">
+                            2017 Fall CP 第八週考試
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./40623224_2017-fall-cp-w7 - exam.html">
+                            2017 Fall CP 第七週考試
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./40623224_2017-fall-cp-w6.html">
+                            2017 Fall CP 第六週 - Python3 程式語法練習
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list-group-item"><a href="./categories.html"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Categories</span></h4></a>
+                <ul class="list-group" id="categories">
+                    <li class="list-group-item">
+                        <a href="./category/course.html">
+                            <i class="fa fa-folder-open fa-lg"></i> Course
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list-group-item"><a href="./tags.html"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                <ul class="list-group list-inline tagcloud" id="tags">
+                </ul>
+            </li>
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://github.com/DandyDev/pelican-bootstrap3/" target="_blank">
+                pelican-bootstrap3
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://github.com/getpelican/pelican-plugins" target="_blank">
+                pelican-plugins
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://github.com/Tipue/Tipue-Search" target="_blank">
+                Tipue search
+            </a>
+        </li>
+      </ul>
+    </li>
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2017 KMOL
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="./theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./theme/js/bootstrap.min.js"></script>
+
+<!-- for https://github.com/jsor/lity lightbox video popup -->
+
+<link href="./theme/css/lity.css" rel="stylesheet">
+
+<script src="./theme/js/lity.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="./theme/js/respond.min.js"></script>
+
+
+</body>
+</html>
